@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: yellow;
+}
+
+.footerNav {
+    display: flex;
+}
+
+.footerNav li {
+    margin: 20px;
+}
+
+.starWarsLogo {
+    text-align: center;
+    margin: 40px 60px;
+}
+
+.starWarsLogo img {
+    max-width: 150px;
+}
+
+.footerDescr {
+    padding: 10px 120px;
+}
+
+.footerIcons {
+    margin-top: 20px;
+}
+
+.authorDescr {
+    margin-right: 40px;
+}
+
+.footerIcons svg {
+    width: 40px;
+    height: 30px;
+}
