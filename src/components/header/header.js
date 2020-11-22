@@ -2,6 +2,7 @@ import React from 'react';
 import starWarsLogo from '../../img/star-wars-logo.png';
 import { FaSearch } from 'react-icons/fa';
 import './header.css';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -9,16 +10,30 @@ const Header = () => {
 <div>
     <div className='header'>
         <div className='logo-header'>
-            <img src={starWarsLogo} alt='Star Wars Logo'/> 
+            <Link to='/'>
+                <img src={starWarsLogo} alt='Star Wars Logo'/> 
+            </Link>
         </div> 
         <nav className='nav'>
             <ul>
-                <li>CHARACTERS</li>
-                <li>PLANETS</li>
-                <li>FILMS</li>
-                <li>VEHICLES</li>
-                <li>STARSHIPS</li>
-                <li>SPECIES</li>
+                <Link to='/people'>
+                    <li>CHARACTERS</li>
+                </Link>
+                <Link to='/planets'>
+                    <li>PLANETS</li>
+                </Link>
+                <Link to='/films'>
+                    <li>FILMS</li>
+                </Link>
+                <Link to='/vehicles'>
+                    <li>VEHICLES</li>
+                </Link>
+                <Link to='/starships'>
+                    <li>STARSHIPS</li>
+                </Link>
+                <Link to='/species'>
+                    <li>SPECIES</li>
+                </Link>
             </ul>
         </nav>
 
