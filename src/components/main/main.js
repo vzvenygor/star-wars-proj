@@ -1,11 +1,13 @@
 import React from 'react';
+import Text from '../../img/text.png';
+
 import './main.css';
 
 const Main = () => {
   return (
 <div>
     <div className='mainPage'>
-      <button className='loadMoreBtn'>LOAD MORE</button>
+      <img src={Text} alt='Star Wars text' className='textImg' /> 
     </div> 
 </div>
     

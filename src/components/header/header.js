@@ -1,14 +1,13 @@
 import React from 'react';
 import starWarsLogo from '../../img/star-wars-logo.png';
-import { FaSearch } from 'react-icons/fa';
 import './header.css';
 import { Link } from 'react-router-dom';
-
+import Search from '../search/search';
 
 const Header = () => {
   return (
 <div>
-    <div className='header'>
+    <div className='topHeader'>
         <div className='logo-header'>
             <Link to='/'>
                 <img src={starWarsLogo} alt='Star Wars Logo'/> 
@@ -36,14 +35,8 @@ const Header = () => {
                 </Link>
             </ul>
         </nav>
-
-        <div className='search'>
-            <input type="search" name="search" placeholder="Search" /> 
-            <FaSearch />
-        </div>
-
+        <Search />
     </div>
-
     <hr className='hr'></hr>
 
 </div>
