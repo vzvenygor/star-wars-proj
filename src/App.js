@@ -91,6 +91,7 @@ function App() {
               <Species data={species} />
             </Route>
           </Switch>
+        <Main />
         <Footer />
       </Router>
     </>
