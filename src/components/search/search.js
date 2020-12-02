@@ -1,5 +1,6 @@
 import React from 'react';
-import './search.css'
+import './search.css';
+import Yoda from '../../img/Yoda.png';
 
 class Search extends React.Component {
     constructor() {
@@ -21,6 +22,8 @@ class Search extends React.Component {
     render() {
         return(
             <div className='searchContainer'>
+                <img src={Yoda} alt='Yoda' className='searchImg' />
+                <p className='searchDescr'>What looking for are you, young Padawan?</p>
                 <div className='searchBar'>
                     <input 
                         type='text'

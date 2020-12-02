@@ -33,3 +33,13 @@
         padding: 10px;
         margin-bottom: 10px;
     }
+
+    .searchImg {
+        max-width: 250px;
+        padding-top: 30px;
+    }
+
+    .searchDescr {
+        color: yellow;
+        padding-top: 20px;
+    }

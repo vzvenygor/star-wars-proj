@@ -1,6 +1,4 @@
 import React from 'react';
-import Pagination from './pagination';
-
 
 const People = ({ data }) => {
     return (
@@ -24,9 +22,6 @@ const People = ({ data }) => {
                         </div>    
                     )
                 })}
-            </div>
-            <div>
-                {/* <Pagination totalPage={data.count} /> */}
             </div>
         </div>
     )

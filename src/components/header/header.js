@@ -2,7 +2,6 @@ import React from 'react';
 import starWarsLogo from '../../img/star-wars-logo.png';
 import './header.css';
 import { Link } from 'react-router-dom';
-import Search from '../search/search';
 
 const Header = () => {
   return (
