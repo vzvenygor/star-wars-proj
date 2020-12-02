@@ -1,12 +1,7 @@
 .footer {
-    display: flex;
     justify-content: center;
     background-color: black;
     color: yellow;
-}
-
-.footerNav {
-    display: flex;
 }
 
 .footerNav li {
@@ -37,4 +32,46 @@
 .footerIcons svg {
     width: 40px;
     height: 30px;
+}
+
+@media (min-width: 350px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .starWarsLogo {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .footerDescr {
+        padding: 10px 50px;
+    }
+
+    .footerNav {
+        display: none;
+    }
+
+    .authorDescr {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .footerIcons svg {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 960px) {
+    .footer {
+        display: flex;
+    }
+
+
+    .footerNav {
+        display: flex;
+        text-align: left;
+    }
 }

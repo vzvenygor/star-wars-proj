@@ -35,7 +35,9 @@ const Header = () => {
                 </Link>
             </ul>
         </nav>
-        <Search />
+        <Link to='/search'>
+            <button className='searchButton'>Search</button>
+        </Link>    
     </div>
     <hr className='hr'></hr>
 

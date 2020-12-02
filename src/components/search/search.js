@@ -1,65 +1,52 @@
 import React from 'react';
-import ListItem from './listItem';
-import { FaSearch } from 'react-icons/fa';
+import './search.css'
 
 class Search extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
-            text: '',
+            searchResult: [],
             url: 'https://swapi.dev/api/people/?search=',
         };
-
-        this.getDataFromFetch = this.getDataFromFetch.bind(this);
-        this.handleChange = this.handleChange.bind(this);
-        this.handleFlagChange = this.handleFlagChange.bind(this);
-        this.handleList = this.handleList.bind(this);
-
     }
 
-    componentDidMount() {
-        this.getDataFromFetch();
-    }
-
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        if (this.state.text !== prevState.text) {
-            this.getDataFromFetch();
-        }
-    }
-
-    getDataFromFetch() {
-        fetch(this.state.url+this.state.text, {})
+    getDataFromSearch = (event) => {
+        fetch(this.state.url + event.target.value)
         .then(response => response.json())
-        .then(result => this.setState({data: result}));
-    }
-
-    handleChange(e) {
-        this.setState({text: e.target.value})
-    }
-
-    handleFlagChange() {
-        this.setState({flag: !this.state.flag})
-    }
-
-    handleList() {
-        return this.state.data.results.map(function(item) {
-            return <ListItem item={item.name} />
+        .then(response => {
+            this.setState({ searchResult: response.results });
         })
     }
 
     render() {
         return(
             <div className='searchContainer'>
-                <input 
-                    type='text'
-                    onChange={this.handleChange}
-                    value={this.state.text}
-                />
-                <button onClick={this.handleList}><FaSearch /></button>
-                {/* {this.state.flag}
-                {this.state.data && this.handleList()} */}
+                <div className='searchBar'>
+                    <input 
+                        type='text'
+                        placeholder='Search'
+                        onChange={this.getDataFromSearch}
+                    />
+                    <div className='searchCards'>
+                        {Object.keys(this.state.searchResult).map((item, i) => (
+                            <li key={i} className='searchResult'>
+                                <div className='cardSearch'>
+                                    <span>{this.state.searchResult[item].name}</span>
+                                    <div className='cardDescr'>
+                                        <p>Height: <b>{this.state.searchResult[item].height}</b></p> 
+                                        <p>Mass: <b>{this.state.searchResult[item].mass}</b></p> 
+                                        <p>Hair color: <b>{this.state.searchResult[item].hair_color}</b></p> 
+                                        <p>Eye color: <b>{this.state.searchResult[item].eye_color}</b></p> 
+                                        <p>Skin color: <b>{this.state.searchResult[item].skin_color}</b></p> 
+                                        <p>Birth year: <b>{this.state.searchResult[item].birth_year}</b></p>
+                                    </div>    
+                                </div>
+                            </li>
+                        ))}
+                    </div>
+                </div>
             </div>
-        )
+        );
     }
 }
 export default Search;

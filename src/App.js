@@ -9,6 +9,7 @@ import Vehicles from './components/main/vehicles';
 import Starships from './components/main/starships';
 import Species from './components/main/species';
 import Main from './components/main/main';
+import Search from './components/search/search';
 
 function App() {
   const [people, setPeople] = useState([]);
@@ -18,7 +19,7 @@ function App() {
   const [starships, setStarships] = useState([]);
   const [species, setSpecies] = useState([]);
   const [main] = useState([]);
-
+  
   useEffect(() => {
     async function fetchPeople() {
       let res = await fetch('https://swapi.dev/api/people/?format=json');
@@ -90,8 +91,10 @@ function App() {
             <Route exact path='/species'>
               <Species data={species} />
             </Route>
+            <Route exact path='/search'>
+              <Search />
+            </Route>
           </Switch>
-        <Main />
         <Footer />
       </Router>
     </>

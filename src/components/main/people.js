@@ -1,7 +1,8 @@
 import React from 'react';
-import './main.css';
+import Pagination from './pagination';
 
-export default function People({data}) {
+
+const People = ({ data }) => {
     return (
         <div className='pages'>
             <h1 className='pageTitle'>CHARACTERS</h1>
@@ -24,6 +25,11 @@ export default function People({data}) {
                     )
                 })}
             </div>
+            <div>
+                {/* <Pagination totalPage={data.count} /> */}
+            </div>
         </div>
     )
 }
+
+export default People
