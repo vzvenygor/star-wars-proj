@@ -69,16 +69,18 @@ a {
     }
 }
 
-@media (min-width: 960px) {
-    .topHeader {
-        display: flex;
-    }
-
+@media (min-width: 760px) {
     .nav ul {
         flex-wrap: nowrap;
         justify-content: center;
-        padding: 30px 50px;
     } 
+}
+
+@media (min-width: 1200px) {
+    .topHeader {
+        display: flex;
+        padding-left: 10%;
+    }
 
     .logo-header img {
         padding: 40px 50px;
@@ -87,5 +89,9 @@ a {
     .searchButton {
         margin-top: 50px;
     }
+
+    .nav ul {
+        padding: 30px 50px;
+    } 
 
 }
