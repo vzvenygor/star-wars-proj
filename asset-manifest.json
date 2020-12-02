@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/star-wars-proj/static/css/main.68885447.chunk.css",
-    "main.js": "/star-wars-proj/static/js/main.67370b56.chunk.js",
-    "main.js.map": "/star-wars-proj/static/js/main.67370b56.chunk.js.map",
+    "main.css": "/star-wars-proj/static/css/main.0c9ff7b6.chunk.css",
+    "main.js": "/star-wars-proj/static/js/main.af858086.chunk.js",
+    "main.js.map": "/star-wars-proj/static/js/main.af858086.chunk.js.map",
     "runtime-main.js": "/star-wars-proj/static/js/runtime-main.67710de8.js",
     "runtime-main.js.map": "/star-wars-proj/static/js/runtime-main.67710de8.js.map",
-    "static/js/2.e90bdaef.chunk.js": "/star-wars-proj/static/js/2.e90bdaef.chunk.js",
-    "static/js/2.e90bdaef.chunk.js.map": "/star-wars-proj/static/js/2.e90bdaef.chunk.js.map",
+    "static/js/2.e5ab8f07.chunk.js": "/star-wars-proj/static/js/2.e5ab8f07.chunk.js",
+    "static/js/2.e5ab8f07.chunk.js.map": "/star-wars-proj/static/js/2.e5ab8f07.chunk.js.map",
     "static/js/3.3f8e18a3.chunk.js": "/star-wars-proj/static/js/3.3f8e18a3.chunk.js",
     "static/js/3.3f8e18a3.chunk.js.map": "/star-wars-proj/static/js/3.3f8e18a3.chunk.js.map",
     "index.html": "/star-wars-proj/index.html",
-    "static/css/main.68885447.chunk.css.map": "/star-wars-proj/static/css/main.68885447.chunk.css.map",
-    "static/js/2.e90bdaef.chunk.js.LICENSE.txt": "/star-wars-proj/static/js/2.e90bdaef.chunk.js.LICENSE.txt",
+    "static/css/main.0c9ff7b6.chunk.css.map": "/star-wars-proj/static/css/main.0c9ff7b6.chunk.css.map",
+    "static/js/2.e5ab8f07.chunk.js.LICENSE.txt": "/star-wars-proj/static/js/2.e5ab8f07.chunk.js.LICENSE.txt",
     "static/media/index.css": "/star-wars-proj/static/media/STARWARS.50e674cd.woff",
+    "static/media/Yoda.6afedcc3.png": "/star-wars-proj/static/media/Yoda.6afedcc3.png",
     "static/media/star-wars-logo.70060ecb.png": "/star-wars-proj/static/media/star-wars-logo.70060ecb.png",
     "static/media/text.2e2621c6.png": "/star-wars-proj/static/media/text.2e2621c6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.67710de8.js",
-    "static/js/2.e90bdaef.chunk.js",
-    "static/css/main.68885447.chunk.css",
-    "static/js/main.67370b56.chunk.js"
+    "static/js/2.e5ab8f07.chunk.js",
+    "static/css/main.0c9ff7b6.chunk.css",
+    "static/js/main.af858086.chunk.js"
   ]
 }
