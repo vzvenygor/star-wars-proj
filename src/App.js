@@ -95,6 +95,7 @@ function App() {
               <Search />
             </Route>
           </Switch>
+        <Main />  
         <Footer />
       </Router>
     </>
